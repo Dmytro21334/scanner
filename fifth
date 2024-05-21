@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class fifth {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введіть перший рядок:");
+        String str1 = scanner.nextLine();
+        System.out.println("Введіть другий рядок:");
+        String str2 = scanner.nextLine();
+
+        if (str1.length() > str2.length()) {
+            System.out.println("Перший рядок має більшу довжину.");
+        } else if (str1.length() < str2.length()) {
+            System.out.println("Другий рядок має більшу довжину.");
+        } else {
+            System.out.println("Рядки мають однакову довжину.");
+        }
+    }
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введіть три числа:");
+        double number1, number2, number3;
+
+        try {
+            number1 = Double.parseDouble(scanner.nextLine());
+            number2 = Double.parseDouble(scanner.nextLine());
+            number3 = Double.parseDouble(scanner.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Ви ввели не числа. Будь ласка, введіть числа.");
+            return;
+        }
+
+        double max = Math.max(number1, Math.max(number2, number3));
+
+        System.out.println("Найбільше число: " + max);
+    }
+}
